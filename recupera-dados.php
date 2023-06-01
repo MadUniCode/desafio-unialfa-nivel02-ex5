@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Validação da idade
-    if ($idade <= 18) {
+    if ($idade < 18) {
         echo '<script>alert("A idade precisa ser maior que 18."); window.location.href = "formulario.html";</script>';
         exit();
     }
